@@ -1,0 +1,3 @@
+package net.konyan.frameworkandextensions
+
+class FrameworkAndExtensions
