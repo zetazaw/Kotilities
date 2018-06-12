@@ -1,9 +1,8 @@
 # Kotilities
 Some useful Kotlin extension functions and MVP framework
 
-### Usage
-Anywhere (activity, fragment, framework's presenter) 
-just - 
+### Usage for log
+Anywhere (activity, fragment, framework's presenter) just need
 ```
 logX("message") 
 ``` 
@@ -11,6 +10,15 @@ or
 ```
 logX("message", "e") 
 ```
+### Usage for recyclerview
+Also just need setup
+```
+yourRecyclerView.setup(items, R.layout.item_main, { item ->
+            this.tv_item.text = item //item is string you can also use objects
+            this.setOnClickListener { logX("clicked $item") }
+    })
+
+
 
 
 ## Project Gradle
@@ -24,7 +32,7 @@ allprojects {
 ## App Gradle
 
 ```
-    dependencies {
-        ...
-        implementation 'com.github.zetazaw:Kotilities:master-SNAPSHOT'
-    }
+dependencies {
+    ...
+    implementation 'com.github.zetazaw:Kotilities:master-SNAPSHOT'
+}
