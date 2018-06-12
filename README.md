@@ -2,23 +2,23 @@
 Some useful Kotlin extension functions and MVP framework
 
 
-### Gradle
-allprojects {
+###Project  Gradle
+    allprojects {
 
-    repositories {
-    
-        jcenter()
-        
-        maven { url "https://jitpack.io" }
-        
+        repositories {
+
+            jcenter()
+
+            maven { url "https://jitpack.io" }
+
+        }
+}
+###App Gradle
+    dependencies {
+
+        compile fileTree(dir: 'libs', include: ['*.jar'])
+
+        ...
+
+        compile 'com.github.zetazaw:Beach:-SNAPSHOT'
     }
-}
-### Gradle
-dependencies {
-
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    
-    ...
-    
-    compile 'com.github.zetazaw:Beach:-SNAPSHOT'
-}
