@@ -2,7 +2,7 @@
 Some useful Kotlin extension functions and MVP framework
 
 
-###Project Gradle
+## Project Gradle
 ```
 allprojects {
     repositories {
@@ -11,10 +11,10 @@ allprojects {
     }
 }
 ```
-###App Gradle
+## App Gradle
 
 ```
     dependencies {
 
-        compile 'com.github.zetazaw:Beach:-SNAPSHOT'
+        compile 'com.github.zetazaw:Kotilities:master-SNAPSHOT'
     }
