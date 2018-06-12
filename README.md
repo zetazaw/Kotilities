@@ -17,9 +17,7 @@ yourRecyclerView.setup(items, R.layout.item_main, { item ->
             this.tv_item.text = item //item is string you can also use objects
             this.setOnClickListener { logX("clicked $item") }
     })
-
-
-
+```
 
 ## Project Gradle
 ```
