@@ -3,7 +3,7 @@ Some useful Kotlin extension functions and MVP framework
 
 
 ##Project Gradle
-
+```
 allprojects {
     repositories {
         jcenter()
