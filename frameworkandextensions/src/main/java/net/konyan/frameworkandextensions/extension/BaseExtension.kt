@@ -8,11 +8,7 @@ import android.support.annotation.IdRes
 import android.support.v4.app.*
 import android.support.v7.app.ActionBar
 import android.support.v7.app.AppCompatActivity
-import android.text.Editable
-import android.text.TextUtils.replace
-import android.text.TextWatcher
 import android.util.Log
-import android.widget.EditText
 import android.widget.Toast
 import net.konyan.frameworkandextensions.BuildConfig
 import net.konyan.frameworkandextensions.framework.BasePresenter
@@ -100,19 +96,6 @@ inline fun <reified T: Activity> Fragment.navigate(requestCode: Int = 0x007, key
     startActivityForResult(intent, requestCode)
 }
 
-//special extension
-
-fun EditText.onChange(cb: (String) -> Unit){
-    this.addTextChangedListener(object : TextWatcher {
-        override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-            cb(s.toString())
-        }
-
-        override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) { }
-
-        override fun afterTextChanged(s: Editable?) { }
-    })
-}
 
 //hasing
 

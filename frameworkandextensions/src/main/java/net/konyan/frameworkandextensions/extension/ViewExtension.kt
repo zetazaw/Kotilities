@@ -3,7 +3,10 @@ package net.konyan.frameworkandextensions.extension
 import android.support.design.widget.Snackbar
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.View
+import android.widget.EditText
 
 
 fun View.showSnackBar(message: String, duration: Int = Snackbar.LENGTH_SHORT) {
