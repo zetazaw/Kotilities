@@ -32,5 +32,5 @@ allprojects {
 ```
 dependencies {
     ...
-    implementation 'com.github.zetazaw:kotilities:v_0_0_2'
+    implementation 'com.github.zetazaw:kotilities:0.0.2.1'
 }
