@@ -23,14 +23,14 @@ fun Any.toast(context: Context, length: Int = Toast.LENGTH_SHORT) {
 
 
 private fun loggin(tag: String, message: String, level: String){
-    if (BuildConfig.DEBUG){
-        when (level){
-            "e" -> Log.e(tag, message)
-            "i" -> Log.i(tag, message)
-            "w" -> Log.w(tag, message)
-            else -> Log.d(tag, message)
-        }
+    
+    when (level){
+        "e" -> Log.e(tag, message)
+        "i" -> Log.i(tag, message)
+        "w" -> Log.w(tag, message)
+        else -> Log.d(tag, message)
     }
+    
 }
 
 fun FragmentActivity.logX(message: String, level: String = "d"){
